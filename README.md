@@ -1,25 +1,40 @@
-# Discover Dollar DevOps Assignment – Clean Scaffold
+# Discover Dollar – DevOps Internship Assignment  
+**MEAN Stack Application Deployment using Docker, CI/CD, and Google Cloud Platform**
 
-This repo is prepared as a clean DevOps scaffold.
+---
 
-## What you still need to add manually
+## 📌 Project Overview  
+This project demonstrates the complete DevOps lifecycle for a full-stack MEAN (MongoDB, Express, Angular, Node.js) application. The application is fully containerized using Docker, deployed on a Google Cloud Platform (GCP) Ubuntu Virtual Machine using Docker Compose, and integrated with an automated CI/CD pipeline using GitHub Actions.
 
-1. Put **company's Angular app code** inside `frontend/` (same level as Dockerfile).
-2. Put **company's Node/Express backend code** inside `backend/` (same level as Dockerfile).
+The main objective of this assignment was to:
+- Containerize frontend and backend applications
+- Deploy the complete stack on a cloud VM
+- Automate Docker build and push using CI/CD
+- Expose the application on a public IP using port 80
 
-After that, you can:
+---
 
-- Initialize git, push to GitHub
-- Configure Docker Hub + CI/CD
-- Deploy on your VM
-CI Trigger Test
-## ✅ CI/CD Status
+## 🏗️ System Architecture  
 
-- GitHub Actions workflow configured: `.github/workflows/deploy.yml`
-- Pipeline runs on every push to the `main` branch.
-- Verified runs:
-  - `Initial commit - MEAN app with DevOps setup`
-  - `Fix Angular build hang by using dev server in Docker`
-  - `Fix MongoDB connection for Docker`
+- **Frontend:** Angular  
+- **Backend:** Node.js + Express  
+- **Database:** MongoDB  
+- **Containerization:** Docker & Docker Compose  
+- **CI/CD:** GitHub Actions  
+- **Cloud Platform:** Google Cloud Platform (Ubuntu VM)
 
-These runs successfully executed the CI pipeline steps (checkout, Docker login, build and push images). Screenshots of the workflow runs and logs are attached in the repository.
+---
+
+## 📁 Repository Structure  
+
+.
+├── frontend/
+│ └── Dockerfile
+├── backend/
+│ └── Dockerfile
+├── docker-compose.yml
+├── nginx.conf
+├── .github/
+│ └── workflows/
+│ └── deploy.yml
+└── README.md
