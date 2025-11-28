@@ -25,6 +25,18 @@ The main objective of this assignment was to:
 
 ---
 
+## ⚠️ Current Limitation  
+
+Due to limited VM hardware resources, the Angular frontend runtime (`ng serve`) experiences performance instability on the cloud instance. However:
+
+✅ Backend service is fully functional  
+✅ MongoDB container is fully operational  
+✅ Docker multi-container deployment is working  
+✅ GitHub Actions CI/CD automation is implemented and verified  
+✅ Cloud infrastructure & deployment process are completed  
+
+---
+
 ## 📁 Repository Structure  
 
 .
