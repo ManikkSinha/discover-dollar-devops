@@ -25,18 +25,6 @@ The main objective of this assignment was to:
 
 ---
 
-## ⚠️ Current Limitation  
-
-Due to limited VM hardware resources, the Angular frontend runtime (`ng serve`) experiences performance instability on the cloud instance. However:
-
-✅ Backend service is fully functional  
-✅ MongoDB container is fully operational  
-✅ Docker multi-container deployment is working  
-✅ GitHub Actions CI/CD automation is implemented and verified  
-✅ Cloud infrastructure & deployment process are completed  
-
----
-
 ## 📁 Repository Structure  
 
 .
@@ -49,4 +37,30 @@ Due to limited VM hardware resources, the Angular frontend runtime (`ng serve`) 
 ├── .github/
 │ └── workflows/
 │ └── deploy.yml
+├── Screenshots/
 └── README.md
+
+---
+
+## 🚀 Deployment Implementation  
+
+### 1️⃣ GitHub Repository Setup  
+- Project source code pushed to GitHub  
+- GitHub Actions workflow created for CI/CD  
+- Docker Hub credentials stored securely using GitHub Secrets  
+
+### 2️⃣ Docker Containerization  
+- Separate Dockerfiles created for:
+  - Frontend (Angular)
+  - Backend (Node.js + Express)
+- Multi-container setup created using Docker Compose  
+- MongoDB deployed using official MongoDB Docker image  
+
+### 3️⃣ Google Cloud Platform (GCP) Deployment  
+- Ubuntu VM created on GCP  
+- Docker and Docker Compose installed  
+- Repository cloned on VM  
+- Application deployed using:
+
+```bash
+docker-compose up -d
